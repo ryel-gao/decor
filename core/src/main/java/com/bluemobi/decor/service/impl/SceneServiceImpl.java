@@ -283,7 +283,7 @@ public class SceneServiceImpl implements SceneService {
                 return query.getRestriction();
             }
 
-        }, new PageRequest(pageNum - 1, pageSize, Sort.Direction.DESC, "isRecommend,id"));
+        }, new PageRequest(pageNum - 1, pageSize, Sort.Direction.DESC, "isRecommend", "id"));
 
         return page;
     }
