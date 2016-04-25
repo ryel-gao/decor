@@ -1,0 +1,52 @@
+package com.bluemobi.decor.portal.controller;
+
+import com.bluemobi.decor.entity.Message;
+import com.bluemobi.decor.portal.util.SessionUtils;
+import com.bluemobi.decor.service.MessageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Locale;
+
+
+@Controller
+public class IndexController {
+
+    @Autowired
+    private MessageService messageService;
+
+    @RequestMapping(value = "/backend")
+    public String adminHomepage(HttpServletRequest request,
+                                HttpServletResponse response,
+                                ModelMap model) {
+        Message message = messageService.showToMain();
+        model.put("message", message);
+        return "登录";
+    }
+
+    @RequestMapping(value = "/")
+    public String pcHomepage(HttpServletRequest request,
+                             HttpServletResponse response,
+                             ModelMap model) {
+        return "redirect:index";
+    }
+
+    @RequestMapping(value = "/index")
+    public String index(HttpServletRequest request,
+                        HttpServletResponse response,
+                        ModelMap model, String langua) {
+        if (langua != null) {
+            SessionUtils.put("langua", langua);
+        }else{
+            SessionUtils.put("langua", "zh_CN");
+        }
+        Message message = messageService.showToMain();
+        model.put("message", message);
+        return "pc/首页";
+    }
+
+}

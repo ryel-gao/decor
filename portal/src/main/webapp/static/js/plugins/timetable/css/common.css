@@ -1,0 +1,449 @@
+@charset "utf-8";
+.orange {
+  color: #f36f20 !important;
+}
+.white {
+  color: #fff;
+}
+p {
+  color: #666;
+}
+p.white {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #f36f20;
+}
+a:hover {
+  color: #f36f20;
+}
+.font {
+  font: 12px/1.6em "Microsoft yahei", Arial, sans-serif;
+}
+.yahei {
+  font-family: "Microsoft yahei", Arial, sans-serif;
+}
+.f12 {
+  font-size: 12px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.bold {
+  font-weight: bold;
+}
+.vt {
+  vertical-align: top;
+}
+.vm {
+  vertical-align: middle;
+}
+.vb {
+  vertical-align: bottom;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fix {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+/* ----------------- reset ---------------- */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font: 12px/1.6em "Microsoft yahei", Arial, sans-serif;
+  overflow-x: auto;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font: 12px/1.6em "Microsoft yahei", Arial, sans-serif;
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+p,
+span {
+  -webkit-text-size-adjust: none;
+}
+applet,
+dd,
+div,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+object,
+p,
+span {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+img {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  border: none;
+}
+/* ----------------- common ---------------- */
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+* + html .clearfix {
+  zoom: 1;
+}
+.ellipsis {
+  overflow: hidden;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.underline {
+  text-decoration: underline;
+}
+.last {
+  border-bottom: none !important;
+}
+/* icon */
+.iicon {
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../images/sprites.png') 0 0 no-repeat;
+  background-size: 192px auto;
+}
+.i-arrow {
+  width: 17px;
+  height: 17px;
+  background-position: -12px -10px;
+}
+.i-time {
+  width: 11px;
+  height: 11px;
+  background-position: -40px -13px;
+}
+.i-close {
+  width: 20px;
+  height: 20px;
+  background-position: -64px -8px;
+  right: 3px;
+  top: 3px;
+}
+/* layout */
+.wrapper {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  background: #f4f4f4;
+}
+.wrapper.weekshow {
+  background: url('../images/lesson_bg.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+/* lesson */
+.tab {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  border: 1px solid #f36f20;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.tab a {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #f36f20;
+}
+.tab a.active {
+  background: #f36f20;
+  color: #fff;
+}
+.table-wrapper,
+.month-show-wrapper {
+  box-sizing: border-box;
+  padding-top: 60px;
+  height: 100%;
+}
+.month-show-wrapper {
+  padding: 70px 15px 15px;
+}
+.lesson_table {
+  color: #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1.2em;
+}
+.lesson_table span {
+  display: inline-block;
+  transform: scale(0.8);
+}
+.lesson_table th {
+  font-weight: normal;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.lesson_table th:first-child {
+  border-left: 0;
+}
+.lesson_table td {
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.lesson_table td:first-child {
+  border-left: 0;
+  background: none;
+}
+.lesson_table tr.today td {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+.empty {
+  position: absolute;
+  width: 120px;
+  padding-top: 120px;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -60px;
+  background: url('../images/empty.png') 0 0 no-repeat;
+  background-size: 120px 120px;
+}
+/* ------------------ 我的课表 --------------------- */
+.curmonth,
+.nextmonth {
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 26px;
+}
+.curmonth h3,
+.nextmonth h3 {
+  width: 100%;
+  color: #666;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 26px;
+  line-height: 26px;
+}
+.p-tag {
+  top: 57px;
+  left: 15px;
+  line-height: 1.4em;
+}
+.p-tag .span-tag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  background: #dedede;
+  margin-right: 2px;
+}
+.p-tag .span-tag.ing {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #f36f20;
+  border-radius: 2px;
+}
+.my-timetable {
+  box-sizing: border-box;
+  height: 100%;
+  color: #666;
+  padding-top: 23px;
+}
+.my-timetable .tt-cell {
+  display: block;
+  float: left;
+  width: 14%;
+  text-align: center;
+}
+.my-timetable .tt-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+}
+.my-timetable .tt-header .tt-cell {
+  height: 22px;
+  border-bottom: 1px solid #f36f20;
+}
+.my-timetable .tt-body {
+  margin-top: 2%;
+  height: 98%;
+}
+.my-timetable .tt-body .tt-cell {
+  color: #666;
+  width: 14%;
+  height: 14%;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.my-timetable .tt-body .tt-cell span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.my-timetable .tt-body .tt-cell.ing span {
+  background: #f4f4f4;
+  border: 1px solid #f36f20;
+  color: #f36f20;
+}
+.my-timetable .tt-body .tt-cell.ed span {
+  background: #dedede;
+}
+.my-timetable .tt-body .tt-cell.curday span {
+  background: #f36f20;
+  color: #fff;
+}
+.lesson_list {
+  padding: 15px;
+}
+.lesson_list li {
+  margin-bottom: 15px;
+  padding: 0 8px 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #ccc;
+}
+.lesson_list li h3 {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+  color: #666;
+}
+.lesson_list li h3 .s-tag {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  height: 12px;
+  width: 6px;
+  background: #8c97cb;
+}
+.lesson_list li h3 .l-time {
+  float: right;
+  color: #999;
+}
+.lesson_list li h3 .l-time .i-time {
+  margin-right: 5px;
+}
+.lesson_list li p {
+  line-height: 2em;
+  color: #666;
+}
+.lesson_list li p span {
+  color: #999;
+}
+.lesson_list li p .s-time {
+  display: inline-block;
+  width: 120px;
+  color: #666;
+}
+.lesson_list li.yasi h3 .s-tag {
+  background: #f29c9f;
+}

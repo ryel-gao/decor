@@ -1,0 +1,8 @@
+base.url=http://localhost:8080/
+
+
+upload.url = ${pro.upload.url}
+
+upload.path = ${pro.upload.path}
+
+ffmpeg.path = ${pro.ffmpeg.path}

@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 注册 */
+.login_warp .login_bg {
+    max-width: 100%;
+    height: 700px;
+    width: 100%;
+}
+.Poplogo{
+    text-align: center;
+    margin: 35px 0;
+}
+.form{
+    padding: 0 40px;
+}
+.form .form-item{
+    border: 1px solid #cccccc;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 20px;
+}
+.form-item .iicon{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #cdcdcd;
+    left: 0;
+    top: 0;
+}
+.form-item .phone{
+    background-position: 3px -97px;
+}
+.form-item input{
+    width: 100%;
+    height: 100%;
+    margin-left: 38px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #999;
+}
+.form-item .nickname{
+    background-position: -31px -97px;
+}
+.form-item .password{
+    background-position: -66px -97px;
+}
+.form-item .validate{
+    background-position: -102px -97px;
+}
+.sendCodeBtn{
+    width: 112px;
+}
+.agree .i-check{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-position: -8px -136px;
+}
+.agree .checked{
+    background-position: -40px -136px;
+}
+.registerBtn{
+    width: 100%;
+    margin: 30px 0 15px 0;
+}
+.registerWay .iicon{
+    width: 70px;
+    height: 70px;
+    margin: 20px 30px;
+}
+.registerWay .wechat{
+    background-position: -527px -184px;
+}
+.registerWay .qq{
+    background-position: -528px -265px;
+}
+.registerWay .weibo{
+    background-position: -528px -346px;
+}
+.confirmBtn,.cancelBtn{
+    width: 140px;
+}
+.confirmBtn{
+    margin-right: 20px;
+}
+.registerRule{
+    padding:0 20px 20px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.ruleCont{
+    padding:0 20px 20px 20px;
+}
+.ruleCont .para{
+    font-size: 16px;
+    color: #999999;
+    line-height: 35px;
+    text-align: justify;
+}
+
