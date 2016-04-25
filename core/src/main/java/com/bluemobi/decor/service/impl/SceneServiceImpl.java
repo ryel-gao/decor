@@ -236,7 +236,20 @@ public class SceneServiceImpl implements SceneService {
 
     @Override
     public List<Scene> pcRecommendList() {
-        return sceneDao.recommendList();
+        List<Scene> list = sceneDao.recommendList();
+        List<Scene> resultList = new ArrayList<Scene>();
+
+        if (null != list && list.size() > 0) {
+            if (list.size() > 6) {
+                for (int i = 0; i < 6; i++) {
+                    resultList.add(list.get(i));
+                }
+            } else {
+                resultList = list;
+            }
+        }
+
+        return resultList;
     }
 
     @Override
