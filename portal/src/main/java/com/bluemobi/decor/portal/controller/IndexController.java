@@ -33,6 +33,7 @@ public class IndexController {
         Message message = messageService.showToMain();
         model.put("message", message);
         return "登录";
+        
     }
 
     @RequestMapping(value = "/")
