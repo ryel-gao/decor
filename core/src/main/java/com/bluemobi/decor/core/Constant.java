@@ -21,6 +21,7 @@ public interface Constant {
     int USER_OPUS = 0;
     //用户访问量
     int USER_SEENUM = 0;
+    
     //管理员昵称
 
     // 用户性别
